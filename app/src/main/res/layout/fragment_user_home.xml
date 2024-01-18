@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHomeFragment">
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:autoStart="true"
+        android:flipInterval="3000"
+        android:layout_marginBottom="25dp">
+        <!-- Image views here -->
+    </ViewFlipper>
+
+    <!-- "Categories" label aligned to the left -->
+    <TextView
+        android:id="@+id/textView_categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_flipper"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:text="Top Categories"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <!-- "View All" option aligned to the right -->
+    <TextView
+        android:id="@+id/textView_view_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_flipper"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="View All"
+        android:textSize="18sp"
+        android:textColor="#1a0dab"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Horizontal ScrollView for categories -->
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_view_all"
+        android:layout_marginTop="4dp"
+        android:background="#D3D3D3"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <!-- Categories container -->
+        <LinearLayout
+            android:id="@+id/categories_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp">
+            <!-- Dynamic category items will be added here programmatically -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- "New Arrival" section -->
+    <TextView
+        android:id="@+id/textView_new_arrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontalScrollView_categories"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="New Arrival"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!-- "See All" option for New Arrival -->
+    <TextView
+        android:id="@+id/textView_see_all_new_arrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView_new_arrival"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="View All"
+        android:textSize="18sp"
+        android:textColor="#1a0dab"
+        android:layout_marginTop="0dp" />
+
+    <!-- Horizontal ScrollView for New Arrival -->
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView_new_arrival"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_new_arrival"
+        android:layout_marginTop="4dp">
+
+        <!-- New Arrival items container -->
+        <LinearLayout
+            android:id="@+id/new_arrival_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp">
+            <!-- Dynamic New Arrival items will be added here programmatically -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Advertisement ImageView -->
+    <ImageView
+        android:id="@+id/imageView_advertisement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontalScrollView_new_arrival"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/yes"
+        android:scaleType="fitXY" />
+
+
+</RelativeLayout>

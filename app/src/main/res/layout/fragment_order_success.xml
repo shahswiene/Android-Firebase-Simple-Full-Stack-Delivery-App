@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderSuccessFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView_success"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="success"
+            android:src="@drawable/success" />
+
+        <TextView
+            android:id="@+id/textView_order_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView_success"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Order Successful!"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/button_return_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_order_success"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="Home"
+            android:backgroundTint="@color/but1"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+</FrameLayout>

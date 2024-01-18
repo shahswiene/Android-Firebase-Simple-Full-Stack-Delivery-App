@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/rounded_rectangle_teal"
+    android:layout_margin="8dp">
+
+    <!-- Order ID -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORDER ID"
+        android:id="@+id/textView_order_id"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+        <!-- Payment Method -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment method"
+        android:id="@+id/textView_payment_method"
+        android:textColor="@color/white"
+        android:layout_marginBottom="4dp" />
+
+        <!-- Status -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:id="@+id/textView_status"
+        android:textColor="@color/white"
+        android:layout_marginBottom="4dp" />
+
+        <!-- Number of Items -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:id="@+id/textView_num_items"
+        android:text="No of items" />
+
+
+</LinearLayout>

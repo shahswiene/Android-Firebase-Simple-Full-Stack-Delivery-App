@@ -1,0 +1,6 @@
+<!-- res/values/dimens.xml -->
+<resources>
+    <!-- Define category icon size -->
+    <dimen name="category_icon_size">80dp</dimen> <!-- This is an example size -->
+    <dimen name="new_arrival_image_size">100dp</dimen>
+</resources>

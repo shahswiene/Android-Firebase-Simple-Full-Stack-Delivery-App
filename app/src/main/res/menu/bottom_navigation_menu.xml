@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/addCategory"
+        android:title="Category"
+        android:icon="@drawable/ic_category"/>
+    <item
+        android:id="@+id/Product"
+        android:title="Product"
+        android:icon="@drawable/ic_product"/>
+    <item
+        android:id="@+id/order"
+        android:title="Orders"
+        android:icon="@drawable/baseline_star_border_purple500_24"/>
+</menu>

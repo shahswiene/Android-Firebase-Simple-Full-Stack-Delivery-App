@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CheckOutFragment">
+
+    <!-- Payment Option Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Option"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Radio Group for Payment Options -->
+    <RadioGroup
+        android:id="@+id/radioGroup_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp">
+
+        <!-- Credit/Debit Card Option -->
+        <RadioButton
+            android:id="@+id/radioButton_credit_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit/Debit Card" />
+
+        <!-- Cash on Delivery Option -->
+        <RadioButton
+            android:id="@+id/radioButton_cash_on_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash On Delivery" />
+
+        <!-- Pick Up From Store Option -->
+        <RadioButton
+            android:id="@+id/radioButton_pick_up_from_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Up From Store" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Address Input Field -->
+    <EditText
+        android:id="@+id/editText_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Label for Date and Time Picker -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date and Time"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Date and Time Picker -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_date_time"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date/Time"
+            android:focusable="false"
+            android:editable="false"
+            android:layout_marginBottom="50dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Total Amount -->
+    <TextView
+        android:id="@+id/textView_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: MYR 0"
+        android:textSize="18sp"
+        android:gravity="end"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Order Button -->
+    <Button
+        android:id="@+id/button_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/but1" />
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserViewOrderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"
+            android:weightSum="7">  <!-- Updated weightSum -->
+
+            <!-- Step 1: Confirmed -->
+            <ImageView
+                android:id="@+id/imageView_confirmed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_confirmed" />
+
+            <!-- Divider line 1 -->
+            <View
+                android:id="@+id/view_divider1"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="@color/black" />
+
+            <!-- Step 2: Packed -->
+            <ImageView
+                android:id="@+id/imageView_packed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_packed" />
+
+            <!-- Divider line 2 -->
+            <View
+                android:id="@+id/view_divider2"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="@color/black" />
+
+            <!-- Step 3: Shipped -->
+            <ImageView
+                android:id="@+id/imageView_shipped"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_shipped" />
+
+            <!-- Divider line 3 -->
+            <View
+                android:id="@+id/view_divider3"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="@color/black" />
+
+            <!-- Step 4: Delivered -->
+            <ImageView
+                android:id="@+id/imageView_delivered"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_delivered" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Summary:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="50dp" />
+
+        <!-- Label and Order ID -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order ID:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/textView_orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[Dynamic Order ID]"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Label and User ID -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User ID:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/textView_userId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[Dynamic User ID]"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Label and Items -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Items:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/textView_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[Dynamic Items List]"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Label and Order Date & Time -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order DateTime:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/textView_orderDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[Dynamic Order DateTime]"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Label and Payment Method -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Method:"
+            android:textStyle="bold"            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/textView_paymentMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[Dynamic Payment Method]"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Label and Address -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/textView_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[Dynamic Address]"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Label and Status -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/textView_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[Dynamic Status]"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Label and Total Amount -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+        <TextView
+            android:id="@+id/textView_totalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[Dynamic Total Amount]"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" /> <!-- Replace with your actual logo resource -->
+
+    <!-- Email Address Label -->
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appLogo"
+        android:layout_marginTop="14dp"
+        android:text="Email Address" />
+
+    <!-- Email Address -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailLabel"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <!-- Password Label -->
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailEditText"
+        android:layout_marginTop="16dp"
+        android:text="Password" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLabel"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_marginTop="16dp"
+        android:text="Submit" />
+
+    <!-- Forgot Password TextView -->
+    <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submitButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Forgot Password?"
+        android:textColor="?android:attr/colorAccent" />
+
+
+    <!-- Text to Register Page -->
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotPasswordTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Not a member? Register here"
+        android:textColor="?android:attr/colorAccent" />
+
+</RelativeLayout>

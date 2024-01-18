@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+
+        <!-- Email Address Label -->
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appLogo"
+            android:layout_marginTop="16dp"
+            android:text="Email Address" />
+
+        <!-- Email Address -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailLabel"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <!-- Full Name Label -->
+        <TextView
+            android:id="@+id/fullNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailEditText"
+            android:layout_marginTop="16dp"
+            android:text="Full Name" />
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/fullNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullNameLabel"
+            android:hint="Enter your full name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <!-- Gender Label -->
+        <TextView
+            android:id="@+id/genderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullNameEditText"
+            android:layout_marginTop="16dp"
+            android:text="Gender" />
+
+        <!-- Gender -->
+        <RadioGroup
+            android:id="@+id/genderRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genderLabel"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/maleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/femaleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <!-- Age Label -->
+        <TextView
+            android:id="@+id/ageLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genderRadioGroup"
+            android:layout_marginTop="16dp"
+            android:text="Age" />
+
+        <!-- Age -->
+        <EditText
+            android:id="@+id/ageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ageLabel"
+            android:hint="Enter your age"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <!-- House Address Label -->
+        <TextView
+            android:id="@+id/houseAddressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ageEditText"
+            android:layout_marginTop="16dp"
+            android:text="House Address" />
+
+        <!-- House Address -->
+        <EditText
+            android:id="@+id/houseAddressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/houseAddressLabel"
+            android:hint="Enter your house address"
+            android:inputType="textPostalAddress"
+            android:minHeight="48dp" />
+
+
+        <!-- Password Label -->
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/houseAddressEditText"
+            android:layout_marginTop="16dp"
+            android:text="Password" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordLabel"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <!-- Confirm Password Label -->
+        <TextView
+            android:id="@+id/confirmPasswordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordEditText"
+            android:layout_marginTop="16dp"
+            android:text="Confirm Password" />
+
+        <!-- Confirm Password -->
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirmPasswordLabel"
+            android:hint="Confirm your password"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirmPasswordEditText"
+            android:layout_marginTop="16dp"
+            android:text="Submit" />
+
+        <!-- Text to Login Page -->
+        <TextView
+            android:id="@+id/loginTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/submitButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Already a member? Login here"
+            android:textColor="?android:attr/colorAccent" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TSL</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="test">Test</string>
+    <string name="add_to_cart">Add Cart</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_price">Product Price</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_category">Product Category</string>
+    <string name="product_quantity_left">0</string>
+    <string-array name="order_statuses">
+        <item>Confirmed</item>
+        <item>Packed</item>
+        <item>Shipped</item>
+        <item>Delivered</item>
+    </string-array>
+</resources>

@@ -1,0 +1,219 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHomeFragment">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/tv_dashboard_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:columnCount="1"
+        android:rowCount="4"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_gravity="center">
+
+        <!-- RelativeLayout for Today Sales -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_rectangle_purple"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp">
+
+            <!-- Amount TextView -->
+            <TextView
+                android:id="@+id/tv_amount_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11611 MYR"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+            <!-- Description TextView -->
+            <TextView
+                android:id="@+id/tv_description_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today Sales"
+                android:layout_below="@id/tv_amount_today"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:textColor="#FFFFFF"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <!-- Icon ImageView -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_today" /> <!-- Replace with your icon reference -->
+        </RelativeLayout>
+
+        <!-- RelativeLayout for Monthly Sales -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_rectangle_pink"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp">
+
+            <!-- Amount TextView for Monthly Sales -->
+            <TextView
+                android:id="@+id/tv_amount_monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11611 MYR"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+            <!-- Description TextView for Monthly Sales -->
+            <TextView
+                android:id="@+id/tv_description_monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Sales"
+                android:layout_below="@id/tv_amount_monthly"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:textColor="#FFFFFF"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <!-- Icon ImageView for Monthly Sales -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_calendar" /> <!-- Replace with your icon reference -->
+        </RelativeLayout>
+
+        <!-- RelativeLayout for Lifetime Orders -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_rectangle_blue"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp">
+
+            <!-- Amount TextView for Lifetime Orders -->
+            <TextView
+                android:id="@+id/tv_amount_lifetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11611 MYR"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+            <!-- Description TextView for Lifetime Orders -->
+            <TextView
+                android:id="@+id/tv_description_lifetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lifetime Orders"
+                android:layout_below="@id/tv_amount_lifetime"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:textColor="#FFFFFF"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <!-- Icon ImageView for Lifetime Orders -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_box" /> <!-- Replace with your icon reference -->
+        </RelativeLayout>
+
+        <!-- RelativeLayout for Categories -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_rectangle_teal"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="16dp">
+
+            <!-- Amount TextView for Categories -->
+            <TextView
+                android:id="@+id/tv_amount_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+            <!-- Description TextView for Categories -->
+            <TextView
+                android:id="@+id/tv_description_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:layout_below="@id/tv_amount_categories"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:textColor="#FFFFFF"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <!-- Icon ImageView for Categories -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_category" /> <!-- Replace with your icon reference -->
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_sign_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:onClick="signOut" />
+
+    </GridLayout>
+</FrameLayout>
+
